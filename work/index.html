@@ -16,6 +16,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,15 +28,30 @@
   <!-- TODO add manifest here -->
   <link rel="manifest" href="/manifest.json">
 
-   <!-- Add to home screen for Safari on iOS -->
-   <meta name="apple-mobile-web-app-capable" content="yes">
-   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-   <meta name="apple-mobile-web-app-title" content="Weather PWA">
-   <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
 
-   <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
-   <meta name="msapplication-TileColor" content="#2F3BA2">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAikVzzLgKD1mr6mNB5ZA_o7J3bNabcwpY",
+      authDomain: "pwa-weather-sample-app.firebaseapp.com",
+      databaseURL: "https://pwa-weather-sample-app.firebaseio.com",
+      projectId: "pwa-weather-sample-app",
+      storageBucket: "pwa-weather-sample-app.appspot.com",
+      messagingSenderId: "700486294265"
+    };
+    firebase.initializeApp(config);
+  </script> -->
 </head>
+
 <body>
 
   <header class="header">
@@ -55,7 +71,8 @@
         <div class="visual">
           <div class="icon"></div>
           <div class="temperature">
-            <span class="value"></span><span class="scale">°F</span>
+            <span class="value"></span>
+            <span class="scale">°F</span>
           </div>
         </div>
         <div class="description">
@@ -177,4 +194,5 @@
   <script src="scripts/app.js" async></script>
 
 </body>
+
 </html>
